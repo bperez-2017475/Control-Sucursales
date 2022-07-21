@@ -1,0 +1,28 @@
+<navbar></navbar>
+
+<body>
+
+    <button style="margin-top: 7%; float: right; margin-right: 3%;" class="button-36" role="button">Add an new Event</button>
+
+<div class="container" style="margin-left: 12%">
+	<table>
+		<thead>
+			<tr>
+				<th>No.</th>
+				<th>Nombre de los eventos</th>
+				<th>Horario de los eventos</th>
+				<th>Tipo de los eventos</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let event of events, let i=index">
+				<td>{{i+1}}</td>
+				<td>{{event.name}}</td>
+				<td>{{event.startDate}} - {{event.finishDate}}</td>
+				<td>{{event.type}}</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+</body>

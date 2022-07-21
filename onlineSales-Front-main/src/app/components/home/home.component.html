@@ -1,0 +1,73 @@
+<!-- <div class="body">
+    <h1>Bienvenidos a {{ proyect }}</h1> <!--INTERPOLACIÓNN
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius maxime consequatur nam! Molestias expedita aut culpa natus. Expedita cupiditate ut neque quos dicta inventore ullam rerum sit labore ad. Facere.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia pariatur nobis rerum quas, voluptas inventore voluptatibus recusandae eos suscipit aliquid exercitationem, esse temporibus quidem vel? Maiores maxime ipsa ab!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis similique, dolores vitae eius amet quo dignissimos excepturi aliquid voluptates asperiores, quis magnam ad corporis ratione officiis? Quo odit facere commodi!
+    </p>
+</div>
+
+<div> <!--INTERPOLACION {}
+    <p *ngFor="let product of products"><!--INTERPOLACIÓN CONEXIÓN DE UNA VÍA CON EL TS
+       name: {{product.name }}, <!--INTERPOLACIÓN NORMAL
+       price: Q{{ product.price + IVA}} <!--INTERPOLACION CON CONCATENACIÓN
+       model: {{ getModel() }} <!--INTERPOLACION DE UN MÉTODO
+    </p>
+</div>
+
+<!--Property binding | propiedades HTML []
+<button class="btn btn-primary" [disabled]="name">Eliminar texto</button>
+<input type="text" [required]="name">
+
+<!--Event binding | eventos JS  () 
+<button class="btn btn-danger" (click)="verInfo()">Sumar</button>
+<input type="text" (keydown)="restar($event)">
+
+<!-- Two way binding | [(ngModel)]
+<br>
+<label for="username">Username: </label>
+<input type="text" [(ngModel)]="username" name="username">
+<h3>{{ username }}</h3>
+<button (click)="verUsername()">Ver username</button>
+-->
+<navbar></navbar>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../../assets/img/vo.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/img/vo2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/img/vo3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h1 class="mb-3 mt-3">Welcome to ONLINE_SALES</h1>
+  <div class="card ms-5 me-5">
+    <h5 class="card-header text-center">About us</h5>
+    <div class="card-body">
+      <h5 class="card-title">We are the best online sales platform</h5>
+      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, tempora. Laboriosam officia quaerat, architecto dolores distinctio odit eveniet quod, ratione harum ipsam aliquam voluptates id hic vel expedita explicabo nobis!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor ipsa obcaecati perspiciatis eaque esse est assumenda corporis. Totam esse quidem aut non, autem aliquam illo suscipit. Enim, minus officia.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nesciunt molestias aspernatur aliquam, tempora a ea eum maiores ad nisi accusamus rem inventore corrupti voluptas labore commodi minima quo incidunt.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ratione ullam minus nulla cumque in recusandae eaque, animi soluta odio sunt quas minima optio, velit commodi laborum consequuntur odit doloremque?
+      </p>
+      <a href="#" class="btn btn-primary">More</a>
+    </div>
+  </div>

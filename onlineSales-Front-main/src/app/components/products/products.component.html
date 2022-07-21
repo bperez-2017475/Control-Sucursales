@@ -1,0 +1,60 @@
+<navbar></navbar>
+
+<body>
+  <header style="margin-left: 40%; color: white;">
+    <h1><b>Eventos del hotel</b></h1>
+  </header>
+
+    <button
+    data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="margin-top: 5%; margin-left: 42.5%;" class="button-36" role="button">Agregar nuevo evento
+    </button>
+
+
+<div class="container" style="margin-left: 12%">
+	<table>
+		<thead>
+			<tr>
+				<th>No.</th>
+				<th>Nombre de los eventos</th>
+				<th>Horario de los eventos</th>
+				<th>Tipo de los eventos</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let event of events, let i=index">
+				<td>{{i+1}}</td>
+				<td>{{event.name}}</td>
+				<td>{{event.startDate}} - {{event.finishDate}}</td>
+				<td>{{event.type}}</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+</body>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Agregar un nuevo evento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       Nombre del Evento
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
